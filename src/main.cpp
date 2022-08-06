@@ -18,9 +18,10 @@ int main() {
     parse_minor_bitmask(*devices);
     if(!devices->empty()){
         spdlog :: info("Creating xml info");
+        std :: string xml_vid = cr_xml(*devices);
+        std :: cout << xml_vid << std :: endl;
     }else{
         spdlog :: error("No devices has been founded,can't create xml info");
     }
-    std :: string xml_vid = cr_xml(*devices);
     return 0;
 }
