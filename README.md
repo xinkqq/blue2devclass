@@ -8,6 +8,7 @@
 
 ## Compilation and installation
 ```
+$ sudo apt-get install libspdlog-dev
 $ mkdir build; cd build
 $ cmake ..
 $ make

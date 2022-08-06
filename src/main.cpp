@@ -16,7 +16,11 @@ int main() {
         spdlog :: error("Parsing major device class\n");
     };
     parse_minor_bitmask(*devices);
-    spdlog :: info("Creating xml info");
+    if(!devices->empty()){
+        spdlog :: info("Creating xml info");
+    }else{
+        spdlog :: error("No devices has been founded,can't create xml info");
+    }
     std :: string xml_vid = cr_xml(*devices);
     return 0;
 }
