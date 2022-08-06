@@ -12,5 +12,4 @@ $ sudo apt-get install libspdlog-dev
 $ mkdir build; cd build
 $ cmake ..
 $ make
-# make install
 
