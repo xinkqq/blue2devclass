@@ -8,7 +8,7 @@
 
 ## Compilation and installation
 ```
-$ sudo apt-get install libspdlog-dev
+$ sudo apt-get install libspdlog-dev libbluetooth-dev
 $ mkdir build; cd build
 $ cmake ..
 $ make
